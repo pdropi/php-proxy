@@ -3,14 +3,15 @@
 This proxy script allows you to forward all HTTP/HTTPS requests to another server. Works for all common request types 
 including GET, POST requests with files, PATCH and PUT requests. It has minimal set of requirements 
 (PHP >=5.6, libcurl, gzip) which are available even on the smallest free hostings and has its own simple authorization 
-and cookie support.
+and cookie and reverse proxy support.
 
 ## How to use
-* Copy the [simple_proxy.php](simple_proxy.php) script to publicly-accessible folder of a PHP web server (the script is standalone and has no PHP dependencies)
+* Copy the [simple_proxy.php](simple_proxy.php) script to publicly-accessible folder of a PHP web server (the script is standalone and has no PHP dependencies).
 * Make a request targeting this script
 * Add **Proxy-Auth** header with auth key [found here](https://github.com/pdropi/php-proxy/blob/master/simple_proxy.php#L45)
 * Add **Proxy-Target-URL** header with URL to be requested by the proxy
 * (Optional) Add **Proxy-Debug** header for debug mode
+* (Alternative way) Instead of copying into a puclic folder and accessing it directly, you can add the necessary headers and include() the file.
 
 In order to protect using proxy by unauthorized users, consider changing `Proxy-Auth` token in [proxy source file](https://github.com/pdropi/php-proxy/blob/master/simple_proxy.php#L45) and in all your requests.
 
