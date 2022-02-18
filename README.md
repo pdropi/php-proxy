@@ -132,8 +132,7 @@ You can redirect directly to proxy file via webserver. Reverse proxy can be done
 </VirtualHost>
 ```
 
-## Example of use with apache, PHP reverse proxy and include() from another php file [found here](https://github.com/pdropi/php-proxy/blob/master/simple_proxy_use_example.php#L25:
-
+## Example of use with apache, PHP reverse proxy and include() from another php file
 ```
 <VirtualHost>
 #...
@@ -159,7 +158,7 @@ $_SERVER['HTTP_REVERSE_PROXY'] = 'anotherhost.com:3128';  //you can set real des
 include '/can_be_or_NOT_public/simple_proxy.php';
 ```
 
-## Example of use with apache and include() from another php file [found here](https://github.com/pdropi/php-proxy/blob/master/simple_proxy_use_example.php#L25:
+## Example of use with apache and include() from another php file
 
 ```
 <VirtualHost>
