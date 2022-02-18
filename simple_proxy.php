@@ -16,9 +16,7 @@ use RuntimeException;
  *    https://gist.github.com/iovar
  *
  * Credits for improvements on COOKIE and POST treatment and for reverse proxy:
- * 
- *
- *
+ *   https://github.com/pdropi/php-proxy
  *
  * Usage:
  *    To call this script two headers must be sent
