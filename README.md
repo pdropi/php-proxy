@@ -140,6 +140,13 @@ You can redirect directly to proxy file via webserver. Reverse proxy can be done
       ProxyPass "http://localhost/simple_proxy_use_example.php"
       ProxyPassReverse "http://localhost/simple_proxy_use_example.php"
 </Location>
+#consider implementing aditional security
+#<Proxy *>
+    # AuthType Basic
+   #   AuthName "Who are you"
+  #    AuthUserFile /home/turismo/.htpasswd
+ #     Require valid-user
+#</Proxy>
 </VirtualHost>
 
 ```
