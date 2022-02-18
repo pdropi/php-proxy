@@ -7,7 +7,7 @@ and cookie support.
 
 ## How to use
 * Copy the [simple_proxy.php](simple_proxy.php) script to publicly-accessible folder of a PHP web server (the script is standalone and has no PHP dependencies)
-* Make a cURL request targeting this script
+* Make a request targeting this script
 * Add **Proxy-Auth** header with auth key [found here](https://github.com/pdropi/php-proxy/blob/master/simple_proxy.php#L45)
 * Add **Proxy-Target-URL** header with URL to be requested by the proxy
 * (Optional) Add **Proxy-Debug** header for debug mode
